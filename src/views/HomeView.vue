@@ -5,9 +5,10 @@ import MovieItem from '@/components/MovieItem.vue'
 
 const watchlist = useWatchlistStore()
 
-onMounted(() => {
-  watchlist.fetchMovies()
-})
+//Lifecycle hook
+  onMounted(() => {
+    watchlist.fetchMovies()
+  })
 </script>
 
 <template>
@@ -30,6 +31,7 @@ onMounted(() => {
   </div>
 </template>
 
+<!-- Scoped style -->
 <style scoped>
   .container {
     max-width: 700px;

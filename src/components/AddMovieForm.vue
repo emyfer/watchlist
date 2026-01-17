@@ -1,6 +1,9 @@
+<!-- Komponenta sa stanjem -->
+
 <script setup>
     import { ref } from 'vue'
 
+    //Emitiranje eventa 
     const emit = defineEmits(['add-movie'])
 
     const title = ref('')
@@ -19,6 +22,8 @@
 
 <template>
   <form @submit.prevent="submitForm">
+
+<!-- Two-way binding -->
     <input
       type="text"
       placeholder="Movie title"

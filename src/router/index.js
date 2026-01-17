@@ -4,6 +4,7 @@ const HomeView = () => import('../views/HomeView.vue')
 const AddMovieView = () => import('../views/AddMovieView.vue')
 const NotFoundView = () => import('../views/NotFoundView.vue')
 
+//routing i bookmarkable
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -17,6 +18,7 @@ const router = createRouter({
       name: 'addmovie',
       component: AddMovieView
     },
+//dinamičko usmjeravanje (404 catch all)
     {
       path: '/:pathMatch(.*)*',
       name: 'not-found',

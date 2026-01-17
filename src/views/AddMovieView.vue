@@ -5,6 +5,7 @@
 
   const watchlistStore = useWatchlistStore()
 
+//Methods
   function addMovie(movie) {
     watchlistStore.addMovie(movie)
   }

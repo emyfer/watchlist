@@ -1,11 +1,14 @@
 import { defineStore } from 'pinia'
 
+//store Pinia
 export const useWatchlistStore = defineStore('watchlist', {
   state: () => ({
     movies: []
   }),
 
   actions: {
+
+//asinkroni dohvat podataka (mock backend)
     async fetchMovies() {
       if (this.movies.length > 0) return
 
@@ -37,6 +40,7 @@ export const useWatchlistStore = defineStore('watchlist', {
     }
   },
 
+//Computed properties
   getters: {
     totalCount(state) {
       return state.movies.length

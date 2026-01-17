@@ -1,12 +1,14 @@
+<!-- Komponenta bez stanja -->
+
 <script setup>
 const props = defineProps({
-  movie: {
-    type: Object,
-    required: true
-  }
-})
+    movie: {
+      type: Object,
+      required: true
+    }
+  })
 
-const emit = defineEmits(['toggle', 'delete'])
+  const emit = defineEmits(['toggle', 'delete'])
 </script>
 
 <template>
@@ -19,8 +21,9 @@ const emit = defineEmits(['toggle', 'delete'])
             @change="emit('toggle', movie.id)"
             />
 
+<!-- Interpolation / one-way binding -->
             <span :class="{ watched: movie.watched }">
-            {{ movie.title }}
+              {{ movie.title }}
             </span>
     </span>
     
