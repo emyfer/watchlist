@@ -1,6 +1,8 @@
 https://watchlist-4q3o.onrender.com/
 
-pokretanje sa npm run dev
+pokretanje:
+    prvo: npm i - kako bi se instalirali node_modules
+    i zatim: npm run dev
 
 1. interpolation/one-way binding - Da src/components/MovieItem.vue, :24
 2. two-way binding - Da src/components/AddMovieForm.vue, :26
